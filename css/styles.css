@@ -302,3 +302,96 @@ footer {
     text-align: justify; /* Aligne le texte pour qu'il s'écoule de manière uniforme autour des images */
 }
 
+.center-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    text-align: center;
+}
+
+/* Styliser l'image pour qu'elle s'ajuste au conteneur */
+.center-image img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    display: block;
+    border-radius: 8px; /* Facultatif, pour arrondir les coins */
+}
+
+/* Ajouter un titre sur l'image */
+.center-image .title {
+    position: absolute;
+    bottom: 10px; /* Ajuster la position du texte */
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    background-color: rgba(0, 0, 0, 0.6); /* Fond semi-transparent */
+    padding: 10px;
+    border-radius: 4px;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+        /* Conteneur pour les articles */
+        .article-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        /* Encadré de chaque article */
+        .article-box {
+            width: 500px;
+            border: 1px solid #ddd;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+            text-align: center;
+            -webkit-border-radius: 12px;
+            -moz-border-radius: 12px;
+            -ms-border-radius: 12px;
+            -o-border-radius: 12px;
+}
+
+        /* Animation au survol */
+        .article-box:hover {
+            transform: translateY(-5px);
+        }
+
+        /* Image dans l'encadré */
+        .article-box img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        /* Titre sur l'image */
+        .article-box .title {
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            color: white;
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 10px;
+            border-radius: 4px;
+            font-size: 1.2em;
+            font-weight: bold;
+            width: 90%;
+            text-align: center;
+        }
+
+        /* Positionnement relatif pour le titre */
+        .article-box .image-container {
+            position: relative;
+        }
+
+        /* Contenu de l'article sous l'image */
+        .article-box .content {
+            padding: 15px;
+            font-size: 1em;
+            color: #333;
+        }
