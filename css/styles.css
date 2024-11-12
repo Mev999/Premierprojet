@@ -151,6 +151,7 @@ footer {
     color: white;
     padding: 40px 0;
     border-top: 3px solid #6900a6;
+    margin-top: 50px; /* Ajoutez un espace de 50px au-dessus du footer */
 }
 
 .footer-container {
@@ -394,4 +395,43 @@ footer {
             padding: 15px;
             font-size: 1em;
             color: #333;
+        }
+
+        .form-container {
+            max-width: 500px; /* Largeur maximale du cadre */
+            margin: 0 auto; /* Centrer horizontalement */
+            padding: 20px; /* Espacement intérieur */
+            border: 2px solid #6900a6; /* Bordure du cadre */
+            border-radius: 8px; /* Coins arrondis */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre autour du cadre */
+            background-color: #f9f9f9; /* Couleur de fond */
+        }
+        .form-container form div {
+            margin-bottom: 15px; /* Espacement entre les champs du formulaire */
+        }
+        .form-container label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .form-container input[type="text"],
+        .form-container input[type="email"] {
+            width: 100%; /* Prend toute la largeur */
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .form-container .btn {
+            width: 100%;
+            padding: 10px;
+            background-color: #6900a6;
+            color: #fff;
+            font-weight: bold;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-bottom: 100px; /* Ajoutez un espace de 50px sous le formulaire */
+        }
+        .form-container .btn:hover {
+            background-color: #52007f; /* Couleur au survol */
         }
